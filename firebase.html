@@ -1,0 +1,104 @@
+html>
+<head>
+ <title>Firebase Realtime Database Web</title>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBuFBh4wblI8QPLJajR7L2DldwEom5X13E",
+    authDomain: "workshop-6c13f.firebaseapp.com",
+    databaseURL: "https://workshop-6c13f.firebaseio.com",
+    projectId: "workshop-6c13f",
+    storageBucket: "",
+    messagingSenderId: "394573453455",
+    appId: "1:394573453455:web:df31d13788e11ad82238fa"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</head>
+<body>
+  <form>
+  <div>
+
+    <label>Name </label>
+    <input type="text" name="name" id="name" /></input>
+  
+   </div>
+
+
+   <div>
+
+    <label>Track </label>
+
+    <select id="track" name="track">
+ 
+      <option value="web">Web</option>
+      <option value="Game">Game</option>
+      <option value="Al">Al</option>
+
+  </select>
+  
+   </div>
+
+   <div>
+
+    <label>Email </label>
+    <input type="text" name="email" id="email" /></input>
+  
+   </div>
+
+   <div>
+
+    <label>Phone </label>
+    <input type="number" name="phone" id="phone" /></input>
+  
+   </div>
+
+     <input type="button" value="Save" onclick="save();" />
+  
+
+  </forme>
+  
+  
+  <script>
+  
+  
+   function save(){
+    var name = document.getElementById('name').value;
+    var track = document.getElementById('track').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+       
+    var data = {
+     name: name,
+     track:track,
+     email:email,
+     phone:phone
+    }
+   
+// The key of a root reference is null
+var rootRef = firebase.database().ref();
+var key = rootRef.key;  // key === null
+// Write the new user
+var updates = {};
+updates['/users/' + key] = data;
+return firebase.database().ref().update(updates);
+}
+ 
+   
+   
+   
+  </script>
+  
+ </body>
+ </html>

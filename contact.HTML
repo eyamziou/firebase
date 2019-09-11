@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+
+<body>
+        <header class="all">
+                <img class="petite" src="./res/section2GMCLogo.png" alt="">
+                <ul class="ul1">         
+                                       
+                  <div class="container">
+                      
+                    <ul class="nav justify-content-center">
+                            <li class="nav-item-margin">
+                              <a class="nav-link active-white" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item-margin">
+                              <a class="nav-link active-white" href="courses.HTML">COURSES</a>
+                            </li>
+                            <li class="nav-item-margin">
+                              <a class="nav-link active-white" href="contact.HTML">CONTACT</a>
+                            </li>
+                            
+                          </ul>              
+                </div>    
+                    </ul>  
+            </header>
+  
+        <div class="bgimg">
+            <h1 class="CONTACT"> CONTACT</h1>
+        </div>
+        <form id="middle">
+            <div class="form-group form">
+                <label for="exampleInputEmail1"class="labelcenter">Name</label>
+                <input type="text" class="form-control" id="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your name">
+            </div>
+            <div class="form-group form">
+                <label for="exampleFormControlSelect1"class="labelcenter">Track</label>
+                <select class="form-control" id="track" >
+                  <option>web</option>
+                  <option>game</option>
+                  <option>AI</option>
+                </select>
+              </div>
+            <div class="form-group form">
+              <label for="exampleInputEmail1" class="labelcenter">Email address</label>
+              <input type="email" class="form-control" id="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+             
+            </div>
+            <div class="form-group form">
+              <label for="exampleInputEmail1" class="labelcenter">phone number</label>
+              <input type="number" class="form-control" id="number" id="exampleInputEmail1" placeholder="your phone number">
+            </div>
+         
+         
+            <input type="button" class="btn btn-primary button-btn" value="Save" onclick="save();" />
+          </form>
+    
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAnpEyHITUg-rgpLCeCd5ko4Sd3BqWQ6GY",
+    authDomain: "fir-1-7588c.firebaseapp.com",
+    databaseURL: "https://fir-1-7588c.firebaseio.com",
+    projectId: "fir-1-7588c",
+    storageBucket: "",
+    messagingSenderId: "81795427507",
+    appId: "1:81795427507:web:2db6f4ad8fca5cae95d4c6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</body>
+<script src="./js/main.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</html>
